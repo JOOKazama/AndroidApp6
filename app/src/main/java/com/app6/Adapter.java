@@ -1,5 +1,5 @@
 package com.app6;
-import Movies.Movie;
+import com.movies.Movie;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;

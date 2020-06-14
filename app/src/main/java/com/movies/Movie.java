@@ -1,4 +1,4 @@
-package Movies;
+package com.movies;
 
 public class Movie
 {

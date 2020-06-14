@@ -1,4 +1,4 @@
-package Movies;
+package com.movies;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -14,7 +14,7 @@ public class MovieSource
         while (itr.hasNext())
         {
             Movie movie=itr.next();
-            if (movie.getName().equals(name)) { itr.remove(); }
+            if(movie.getName().equals(name)) { itr.remove(); }
         }
     }
 

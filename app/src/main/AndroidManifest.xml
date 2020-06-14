@@ -18,9 +18,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="Operations.Remove" android:theme="@style/Popup"/>
-
-        <activity android:name="Operations.Add" android:theme="@style/Popup"/>
+        <activity android:name="com.operations.Remove" android:theme="@style/Popup"/>
+        <activity android:name="com.operations.Add" android:theme="@style/Popup"/>
     </application>
 
 </manifest>

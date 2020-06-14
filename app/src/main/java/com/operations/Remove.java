@@ -1,5 +1,5 @@
-package Operations;
-import Validators.Validator;
+package com.operations;
+import com.validators.Validator;
 import android.widget.Toast;
 import com.app6.MainActivity;
 import android.app.Activity;
@@ -8,7 +8,7 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import Movies.MovieSource;
+import com.movies.MovieSource;
 import com.app6.R;
 
 public class Remove extends Activity

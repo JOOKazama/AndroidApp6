@@ -1,5 +1,5 @@
-package Validators;
-import Movies.MovieSource;
+package com.validators;
+import com.movies.MovieSource;
 
 public class Validator
 {
