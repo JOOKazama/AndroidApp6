@@ -33,10 +33,7 @@ public class MainActivity extends AppCompatActivity
         recycler_view.setAdapter(adapter);
         recycler_view.setLayoutManager(new LinearLayoutManager(this));
 
-        final Intent intent_add=new Intent(MainActivity.this, Add.class);
-        final Intent intent_remove=new Intent(MainActivity.this, Remove.class);
-
-        button_add.setOnClickListener(new View.OnClickListener() { @Override public void onClick(View v) { startActivity(intent_add); } });
-        button_remove.setOnClickListener(new View.OnClickListener() { @Override public void onClick(View v) { startActivity(intent_remove); } });
+        button_add.setOnClickListener(new View.OnClickListener() { @Override public void onClick(View v) { startActivity(new Intent(MainActivity.this, Add.class)); } });
+        button_remove.setOnClickListener(new View.OnClickListener() { @Override public void onClick(View v) { startActivity(new Intent(MainActivity.this, Remove.class)); } });
     }
 }
