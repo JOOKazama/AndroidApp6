@@ -1,5 +1,5 @@
-package com.app6;
-import com.movies.Movie;
+package com.RecyclerViewLogic;
+import com.Movies.Movie;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,24 +12,24 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder>
 {
     private final ArrayList<Movie>movies;
 
-    public Adapter(ArrayList<Movie>movies){ this.movies=movies; }
+    public Adapter(ArrayList<Movie>movies) { this.movies=movies; }
 
     @NonNull @Override public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
     {
         Context context=parent.getContext();
-        LayoutInflater inflater=LayoutInflater.from(context);
-        View contactView=inflater.inflate(R.layout.showmovie, parent, false);
-        return new ViewHolder((contactView));
+        LayoutInflater layout_inflater=LayoutInflater.from(context);
+        View view=layout_inflater.inflate(R.layout.showmovie, parent, false);
+        return new ViewHolder((view));
     }
 
     @Override public void onBindViewHolder(@NonNull ViewHolder holder, int position)
     {
-        final Movie m=movies.get(position);
-        holder.setName("Name: "+m.getName());
-        holder.setDirector("Director: "+m.getDirector());
-        holder.setGenre("Genre: "+m.getGenre());
-        holder.setYear("Year: "+m.getYear());
-        holder.setRating(m.getRating());
+        final Movie movie=movies.get(position);
+        holder.setName("Name: "+movie.getName());
+        holder.setDirector("Director: "+movie.getDirector());
+        holder.setGenre("Genre: "+movie.getGenre());
+        holder.setYear("Year: "+movie.getYear());
+        holder.setRating(movie.getRating());
         holder.setIndex("Index: "+holder.getAdapterPosition());
     }
 

@@ -19,7 +19,7 @@
             android:layout_marginLeft="7dp" android:layout_marginStart="7dp"
             app:layout_constraintTop_toBottomOf="@+id/year" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="162dp" android:layout_marginRight="162dp"
-            app:layout_constraintBottom_toTopOf="@+id/rating"/>
+            app:layout_constraintBottom_toTopOf="@+id/rating_stars"/>
     <TextView
             android:layout_width="249dp"
             android:layout_height="22dp"
@@ -80,7 +80,7 @@
     <RatingBar
             android:layout_width="141dp"
             android:layout_height="43dp"
-            android:id="@+id/rating"
+            android:id="@+id/rating_stars"
             tools:ignore="MissingConstraints"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="7dp" android:layout_marginStart="7dp" app:layout_constraintEnd_toEndOf="parent"
@@ -91,8 +91,8 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@android:color/background_dark"
-            tools:ignore="MissingConstraints" android:id="@+id/view3"
+            tools:ignore="MissingConstraints" android:id="@+id/view"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@+id/rating"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@+id/rating_stars"
             app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="1dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

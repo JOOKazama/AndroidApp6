@@ -1,4 +1,4 @@
-package com.app6;
+package com.RecyclerViewLogic;
 
 import org.junit.Test;
 

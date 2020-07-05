@@ -1,4 +1,4 @@
-package com.app6;
+package com.RecyclerViewLogic;
 
 import android.content.Context;
 import androidx.test.platform.app.InstrumentationRegistry;

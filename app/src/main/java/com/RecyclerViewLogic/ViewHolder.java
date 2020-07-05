@@ -1,4 +1,4 @@
-package com.app6;
+package com.RecyclerViewLogic;
 import android.view.View;
 import android.widget.RatingBar;
 import android.widget.TextView;
@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 public class ViewHolder extends RecyclerView.ViewHolder
 {
     private final TextView name, director, genre, year,  index;
-    private final RatingBar rating;
+    private final RatingBar rating_stars;
 
     public TextView getName() { return name; }
     public void setName(String name) { this.name.setText(name); }
@@ -18,8 +18,8 @@ public class ViewHolder extends RecyclerView.ViewHolder
     public void setGenre(String genre) { this.genre.setText(genre); }
     public TextView getYear() { return year; }
     public void setYear(String year) { this.year.setText(year); }
-    public RatingBar getRating() { return rating; }
-    public void setRating(float rating) { this.rating.setRating(rating); }
+    public RatingBar getRating() { return rating_stars; }
+    public void setRating(float rating) { this.rating_stars.setRating(rating); }
     public TextView getIndex() { return index; }
     public void setIndex(String index) { this.index.setText(index); }
 
@@ -31,6 +31,6 @@ public class ViewHolder extends RecyclerView.ViewHolder
         genre=itemView.findViewById(R.id.genre);
         year=itemView.findViewById(R.id.year);
         index=itemView.findViewById(R.id.index);
-        rating=itemView.findViewById(R.id.rating);
+        rating_stars=itemView.findViewById(R.id.rating_stars);
     }
 }
